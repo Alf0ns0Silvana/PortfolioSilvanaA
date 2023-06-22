@@ -15,286 +15,294 @@
 
 <body>
     <div class="scroll">
-    <!-- Menú header -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#"> Silvana Alfonso</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li> <a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li> <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li> <a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li> <a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-    <!-- Seccion inicio -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="">
-            </div>
-            <h1>Silvana Alfonso</h1>
-            <h2>Frontend developer</h2>
-            <div class="redes">
-            <a href="https://github.com/Alf0ns0Silvana" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/silvana-alfonso-44b62b212/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </section>
-    <!-- Seccion sobre mí -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2> Sobre mí</h2>
-            <p> Hola, soy Silvana, Me presento como una persona creativa, con facilidad para adaptación a los
-                cambios, y constante para el aprendizaje continuo. Mi objetivo laboral es
-                formar parte de una empresa que me brinde la oportunidad de demostrar
-                mis habilidades y competencias en el puesto Frontend y que a su vez me
-                ayude a ampliar mis conocimientos</p>
-            <div class="fila">
-                <!-- Datos personales -->
-                <div class="col">
-                    <h3>Contacto</h3>
+        <!-- Menú header -->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#"> Silvana Alfonso</a>
+                </div>
+                <nav id="nav">
                     <ul>
-                        <li>
-                            <strong>Nacimiento:</strong>
-                            16/02/1996
-                        </li>
-                        <li>
-                            <strong>Email:</strong>
-                            alfonsosilvana16@gmail.com
-                        </li>
-                        <li>
-                            <strong>Teléfono:</strong>
-                            3412290622
-                        </li>
-                        <li>
-                            <strong>Dirección:</strong>
-                            Sta Fe, Argentina.
-                        </li>
+                        <li> <a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li> <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li> <a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li> <a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
                     </ul>
-
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-
-            </div>
-            <button class="button_download">
-                <a href="" download="SilvanaAlfonso-FrontendDev">Descargar CV</a>
-            </button>
+            </header>
         </div>
-    </section>
-    <!-- Seccion skills -->
-    <seccion class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical skills -->
-                <div class="col">
-                    <h3>Hard skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso javascript">
-                                <span>40%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Html</span>
-                        <div class="barra-skill">
-                            <div class="progreso html">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Css</span>
-                        <div class="barra-skill">
-                            <div class="progreso css">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Github</span>
-                        <div class="barra-skill">
-                            <div class="progreso github">
-                                <span>45%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Git</span>
-                        <div class="barra-skill">
-                            <div class="progreso git">
-                                <span>40%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Inglés</span>
-                        <div class="barra-skill">
-                            <div class="progreso ingles">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Seccion inicio -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="">
                 </div>
-                <!-- professional skills -->
-                <div class="col">
-                    <h3>Soft skills</h3>
-                    <div class="skill">
-                        <span>Trabajo en equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso Trabajo-en-equipo">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso Comunicacion">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Organización</span>
-                        <div class="barra-skill">
-                            <div class="progreso Organizacion">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Automotivación</span>
-                        <div class="barra-skill">
-                            <div class="progreso Automotivacion">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Meticulosidad</span>
-                        <div class="barra-skill">
-                            <div class="progreso Meticulosidad">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
+                <h1>Silvana Alfonso</h1>
+                <h2>Frontend developer</h2>
+                <div class="redes">
+                    <a href="https://github.com/Alf0ns0Silvana" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/silvana-alfonso-44b62b212/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-        </div>
-    </seccion>
-    <!-- Seccion Curriculum -->
-    <seccion id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Currículum</h2> 
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4> Escuela nº 8083, María Bicecci </h4>
-                        <span class="cargo"> Secundario completo.</span>
-                        <span class="fecha">Fecha: 2012 - 2014 </span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4> Universidad Fasta </h4>
-                        <span class="cargo"> Auxiliar de farmacia.</span>
-                        <span class="fecha">Fecha: 2019 - 2020 </span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4> Universidad
-                            Tecnológica Nacional, Bs As. </h4>
-                        <span class="cargo"> Professional Testing Máster.</span>
-                        <span class="fecha">Fecha: 08/2021 - 10/2021 </span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+        </section>
+        <!-- Seccion sobre mí -->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2> Sobre mí</h2>
+                <p> Me presento como una persona creativa, con facilidad para adaptación a los
+                    cambios, y constante para el aprendizaje continuo. Mi objetivo laboral es
+                    formar parte de una empresa que me brinde la oportunidad de demostrar
+                    mis habilidades y competencias en el puesto Frontend y que a su vez me
+                    ayude a ampliar mis conocimientos. <br> Actualmente estoy formando parte del programa Oracle Next
+                    Education + Alura, especialización en desarrollo web Frontend.</p>
+                <div class="fila">
+                    <!-- Datos personales -->
+                    <div class="col">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li>
+                                <strong>Nacimiento:</strong>
+                                16/02/1996
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                alfonsosilvana16@gmail.com
+                            </li>
+                            <li>
+                                <strong>Teléfono:</strong>
+                                3412290622
+                            </li>
+                            <li>
+                                <strong>Dirección:</strong>
+                                Sta Fe, Argentina.
+                            </li>
+                        </ul>
 
                     </div>
-                    <div class="item izq">
-                        <h4> Estudios de manera autodidacta.</h4>
-                        <span class="cargo"> Desarrollo web - HTML, CSS y BOOTSTRAP | Udemy</span>
-                        <span class="cargo"> FrontEnd developer | Udemy </span>
-                        <span class="cargo"> Html / Css / Javascript ( JS en curso) | @SoyDalto (YT) </span>
-                        <span class="cargo"> Html, Css y Javascript | Arg. prog. 4.0 + Ticmas academy </span>
-                        <span class="cargo"> BOOTCAMP FRONT E (en curso) | Arg. prog. 4.0 + MindHub </span>
-                        <span class="fecha">Fecha: 10/2021 - Actualidad </span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
 
-                    </div>
                 </div>
-                <div class="col derecha">
-                    <h3>Experiencia</h3>
-                    <div class="item der">
-                        <h4> Mordisco Bar.</h4>
-                        <span class="cargo"> Atención al cliente, bachera, limpieza.</span>
-                        <p> Recepción y atención al cliente a la mesa, toma de pedidos, armado de mesas y salón,
-                            servicio,
-                            limpieza y desinfección de vajilla, reposición de mercadería, limpieza de lugar.</p>
-                        <span class="fecha">Fecha: 03/2020 - 11/2020 </span>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4> Autocrédito s.a proyecto sur. </h4>
-                        <span class="cargo">Vendedora, seguimiento al asociado.</span>
-                        <p> Ruteo, venta de planes de ahorro, atención personalizada al cliente.</p>
-                        <span class="fecha">Fecha: 2019 </span>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4> Peluquería canina Mr. Peabody</h4>
-                        <span class="cargo"> Microemprendimiento.</span>
-                        <p> Proyecto auto gestionado. Administración del negocio, atención al
-                            cliente, captación de nuevos clientes, peluquería.</p>
-                        <span class="fecha">Fecha: 2015 - 2019 </span>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4> Victia indumentaria.</h4>
-                        <span class="cargo">Atención al cliente.</span>
-                        <p> Armado de vidrieras y maniquí, actualización de precios, etiquetado y
-                            reposición de prendas, asesoramiento de imagen, venta y atención al
-                            cliente, manejo de caja, efectivo y posnet.
-                        </p>
-                        <span class="fecha">Fecha: 2015 - 2016 </span>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-
+                <button class="button_download">
+                    <a href="" download="SilvanaAlfonso-FrontendDev">Descargar CV</a>
+                </button>
             </div>
-        </div>
-    </seccion>
-    <section id="proyectos" class="proyectos">
+        </section>
+        <!-- Seccion skills AGREGAR REACT Y VUE.JS -->
+        <seccion class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!-- Technical skills -->
+                    <div class="col">
+                        <h3>Hard skills</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Html</span>
+                            <div class="barra-skill">
+                                <div class="progreso html">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Css</span>
+                            <div class="barra-skill">
+                                <div class="progreso css">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Github</span>
+                            <div class="barra-skill">
+                                <div class="progreso github">
+                                    <span>45%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Git</span>
+                            <div class="barra-skill">
+                                <div class="progreso git">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Inglés</span>
+                            <div class="barra-skill">
+                                <div class="progreso ingles">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- professional skills -->
+                    <div class="col">
+                        <h3>Soft skills</h3>
+                        <div class="skill">
+                            <span>Trabajo en equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso Trabajo-en-equipo">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso Comunicacion">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Organización</span>
+                            <div class="barra-skill">
+                                <div class="progreso Organizacion">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Automotivación</span>
+                            <div class="barra-skill">
+                                <div class="progreso Automotivacion">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Meticulosidad</span>
+                            <div class="barra-skill">
+                                <div class="progreso Meticulosidad">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </seccion>
+        <!-- Seccion Curriculum -->
+        <seccion id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Currículum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4> Escuela nº 8083, María Bicecci </h4>
+                            <span class="cargo"> Secundario completo.</span>
+                            <span class="fecha">Fecha: 2012 - 2014 </span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4> Universidad Fasta </h4>
+                            <span class="cargo"> Auxiliar de farmacia.</span>
+                            <span class="fecha">Fecha: 2019 - 2020 </span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4> Universidad
+                                Tecnológica Nacional, Bs As. </h4>
+                            <span class="cargo"> Professional Testing Máster.</span>
+                            <span class="fecha">Fecha: 08/2021 - 10/2021 </span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
 
-    </section>
+                        </div>
+                        <div class="item izq">
+                            <h4> Estudios</h4>
+                            <span class="cargo"> Desarrollo web - HTML, CSS y BOOTSTRAP | Udemy</span>
+                            <span class="cargo"> FrontEnd developer | Udemy </span>
+                            <span class="cargo"> Html / Css / Javascript ( JS en curso) | @SoyDalto (YT) </span>
+                            <span class="cargo"> Html, Css y Javascript | Arg. prog. 4.0 + Ticmas academy </span>
+                            <span class="cargo"> Bootcamp Frontend | Arg. prog. 4.0 + MindHub </span>
+                            <span class="cargo"> Desarrollo web, orientación Frontend (en curso) | ONE + Alura </span>
+                            <span class="fecha">Fecha: 10/2021 - Actualidad </span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
 
-</div>
-<script src="function.js"></script>
+                        </div>
+                    </div>
+                    <div class="col derecha">
+                        <h3>Experiencia</h3>
+                        <div class="item der">
+                            <h4> Mordisco Bar.</h4>
+                            <span class="cargo"> Atención al cliente, bachera, limpieza.</span>
+                            <p> Recepción y atención al cliente a la mesa, toma de pedidos, armado de mesas y salón,
+                                servicio,
+                                limpieza y desinfección de vajilla, reposición de mercadería, limpieza de lugar.</p>
+                            <span class="fecha">Fecha: 03/2020 - 11/2020 </span>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4> Autocrédito s.a proyecto sur. </h4>
+                            <span class="cargo">Vendedora, seguimiento al asociado.</span>
+                            <p> Ruteo, venta de planes de ahorro, atención personalizada al cliente.</p>
+                            <span class="fecha">Fecha: 2019 </span>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4> Peluquería canina Mr. Peabody</h4>
+                            <span class="cargo"> Microemprendimiento.</span>
+                            <p> Proyecto auto gestionado. Administración del negocio, atención al
+                                cliente, captación de nuevos clientes, peluquería.</p>
+                            <span class="fecha">Fecha: 2015 - 2019 </span>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4> Victia indumentaria.</h4>
+                            <span class="cargo">Atención al cliente.</span>
+                            <p> Armado de vidrieras y maniquí, actualización de precios, etiquetado y
+                                reposición de prendas, asesoramiento de imagen, venta y atención al
+                                cliente, manejo de caja, efectivo y posnet.
+                            </p>
+                            <span class="fecha">Fecha: 2015 - 2016 </span>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </seccion>
+        <!-- Seccion Proyectos (amazing events, eventos nf y encriptador ) -->
+        <section id="proyectos" class="proyectos">
+
+        </section>
+
+        <footer class="foot">
+            <span class="foot-descrpcion">Desarrollado por Silvana con muchas horas de 🧉 <br>  2022 </span>
+        </footer>
+
+    </div>
+    <script src="function.js"></script>
 </body>
 
 </html>

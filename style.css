@@ -443,6 +443,19 @@ html {
     bottom: 4px;
 }
 
+                            /* Footer */
+
+.foot{
+    background-color: #17c2bc;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.foot-descrpcion{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 @media screen and (max-width: 980px){
     nav{
         display: none;
