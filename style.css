@@ -61,7 +61,7 @@ html {
 
 .inicio {
     background: linear-gradient(to top, rgba(63, 65, 66, 0.8), rgb(37, 60, 71)),
-    url(b2ap3_large_la-programacin.jpg);
+    url(fondo_banner.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -154,31 +154,24 @@ html {
     width: 140px;
 }
 
-.sobremi button{
-    cursor: pointer;
-    background-color: transparent;
+.sobremi button a{
+    color: #fff;
+    text-decoration: none;
+}
+.button_download{
     border: 2px solid #fff;
+    padding: 10px 20px;
     width: fit-content;
     display: block;
+    transition: .3s;
     margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 18x;
-    color: #fff;
+    background-color: transparent;
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
+.button_download:hover {
     background-color: #17c2bc;
-    z-index: -1;
     transition: 0.8s;
-}
-.sobremi button:hover .overlay{
-    width: 100%;
 }
 
 /* Seccion skills */ 
@@ -194,7 +187,7 @@ html {
 }
 .skills h2{
     color: rgb(255, 255, 255);
-    font-size: 48px;
+    font-size: 35px;
     font-family: 'work sans';
     font-weight: 650;
     text-align: center;
@@ -202,6 +195,7 @@ html {
     background-color: #293b46;
 }
 .skills .fila{
+    padding: 0px 20px;
     display: flex; 
     background-color: #293b46;
 } 
@@ -210,7 +204,7 @@ html {
     padding: 0 20px;
 }
 .skills .fila .col h3{
-    font-size: 28px;
+    font-size: 25px;
     font-family: 'work sans';
     margin-bottom: 20px;
 }
@@ -222,7 +216,7 @@ html {
 } 
 .skills .skill .barra-skill{
     height: 6px;
-    width: 80%; /* 100 queda mejor */
+    width: 100%;
     background-color: #fff;
     position: relative;
     margin-bottom: 30px;
@@ -252,7 +246,7 @@ html {
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 40%;}
 }
 .skills .skill .html{
     width: 0%;
@@ -260,7 +254,7 @@ html {
 }
 @keyframes html {
     0%{width: 0%;}
-    100%{width: 82%;}
+    100%{width: 90%;}
 }
 .skills .skill .css{
     width: 0%;
@@ -284,7 +278,7 @@ html {
 }
 @keyframes git{
     0%{width: 0%;}
-    100%{width: 15%;}
+    100%{width: 40%;}
 }
 .skills .skill .ingles{
     width: 0%;
@@ -300,7 +294,7 @@ html {
 }
 @keyframes trabajo-en-equipo{
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 90%;}
 }  
 .skills .skill .comunicacion{
     width: 0%;
@@ -308,7 +302,7 @@ html {
 }
 @keyframes comunicacion{
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 .skills .skill .organizacion{
     width: 0%;
@@ -332,7 +326,7 @@ html {
 }
 @keyframes meticulosidad{
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 70%;}
 }
 
 /* Seccion Curriculum */
@@ -347,7 +341,7 @@ html {
   margin: auto;
 }
 .curriculum h2{
-    font-size: 48px;
+    font-size: 35px;
     font-family: 'work sans';
     text-align: center;
     padding: 20px 0px;
@@ -362,7 +356,7 @@ html {
     padding: 30px 20px 30px 20px;
 }
 .curriculum .fila .col h3{
-    font-size: 28px;
+    font-size: 25px;
     font-family: 'work sans';
     margin-bottom: 20px;
 }

@@ -15,6 +15,7 @@ function seleccionar(){
     document.getElementById("nav").classList="";
     menuVisible=false;
 }
+
 function efectoHabilidades(){
     var skills= document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
