@@ -204,9 +204,10 @@ html {
     padding: 0 20px;
 }
 .skills .fila .col h3{
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'work sans';
-    margin-bottom: 20px;
+    margin: 20px 0px;
+
 }
 .skills .skill > span{
     font-weight: bold;
@@ -659,10 +660,10 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
-    .skill .fila{
-        display: block;  
+    .skills .fila{
+        flex-direction: column;
     }
-    .skill .fila .col{
+    .skills .fila .col{
         width: 100%;  
     }
     .skill .fila .col .barra-skill{
