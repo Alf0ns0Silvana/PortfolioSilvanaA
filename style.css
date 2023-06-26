@@ -240,30 +240,47 @@ html {
     right: -10px;
     font-size: 13px
 }
+.skills .skill .html-css{
+    width: 0%;
+    animation: 2s html-css forwards;
+}
+@keyframes html-css {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width:75%;}
 }
-.skills .skill .html{
+.skills .skill .vue{
     width: 0%;
-    animation: 2s html forwards;
+    animation: 2s vue forwards;
 }
-@keyframes html {
+@keyframes vue {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 60%;}
 }
-.skills .skill .css{
+.skills .skill .react{
     width: 0%;
-    animation: 2s css forwards;
+    animation: 2s react forwards;
 }
-@keyframes css {
+@keyframes react {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 70%;}
 }
+.skills .skill .node{
+    width: 0%;
+    animation: 2s node forwards;
+}
+@keyframes node {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
 .skills .skill .github{
     width: 0%;
     animation: 2s github forwards;
