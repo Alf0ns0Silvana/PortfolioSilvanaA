@@ -28,6 +28,7 @@
                         <li> <a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                         <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                         <li> <a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                        <li> <a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
                 </nav>
                 <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -35,6 +36,7 @@
                 </div>
             </header>
         </div>
+
         <!-- Seccion inicio -->
         <section id="inicio" class="inicio">
             <div class="contenido-banner">
@@ -50,6 +52,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Seccion sobre mí -->
         <section id="sobremi" class="sobremi">
             <div class="contenido-seccion">
@@ -63,7 +66,7 @@
                 <div class="fila">
                     <!-- Datos personales -->
                     <div class="col">
-                        <h3>Contacto</h3>
+                        <h3>Datos Personales</h3>
                         <ul>
                             <li>
                                 <strong>Nacimiento:</strong>
@@ -75,11 +78,11 @@
                             </li>
                             <li>
                                 <strong>Teléfono:</strong>
-                                3412290622
+                                3412290622 (Arg.)
                             </li>
                             <li>
                                 <strong>Dirección:</strong>
-                                Sta Fe, Argentina.
+                                Rosario, Sta Fe, Argentina.
                             </li>
                         </ul>
 
@@ -91,6 +94,7 @@
                 </button>
             </div>
         </section>
+
         <!-- Seccion skills AGREGAR NODE.JS REACT Y VUE.JS -->
         <seccion class="skills" id="skills">
             <div class="contenido-seccion">
@@ -195,7 +199,8 @@
                 </div>
             </div>
         </seccion>
-        <!-- Seccion Curriculum -->
+
+        <!-- Seccion curriculum -->
         <seccion id="curriculum" class="curriculum">
             <div class="contenido-seccion">
                 <h2>Currículum</h2>
@@ -293,7 +298,7 @@
             </div>
         </seccion>
 
-        <!-- Seccion Proyectos (amazing events, eventos nf y encriptador ) -->
+        <!-- Seccion proyectos -->
         <section id="portfolio" class="portfolio">
             <div class="container-seccion">
                 <h2>Proyectos</h2>
@@ -301,34 +306,62 @@
                     <div class="proyecto">
                         <img src="imgs-proyectos/proyectoAE.png" alt="Vista previa del proyecto AE.">
                         <div class="overlay">
+                            <a class="overlay_a" href=" https://alf0ns0silvana.github.io/AmazingEvents/" target="_blank">
                             <h3>Amazing Events</h3>
-                            <p>Proyecto realizado con html, css y javascript para el programa AP + Mindhub. </p>
+                            <p>Proyecto realizado con html, css y javascript para el programa AP + Mindhub. </p></a>
                         </div>
                     </div>
                     <div class="proyecto">
                         <img src="imgs-proyectos/ProyectoNF.png" alt="Vista previa de la página Organizacion de eventos.">
                         <div class="overlay">
+                            <a class="overlay_a" href="https://alf0ns0silvana.github.io/Org.Eventos.NF/" target="_blank">
                             <h3>Organizacion de eventos</h3>
-                            <p>Página web realizada con html, css y javascript.</p>
+                            <p>Página web realizada con html, css y javascript.</p></a>
                         </div>
                     </div>
                     <div class="proyecto">
-                        <img src="" alt="Vista previa del proyecto encriptador de mensajes.">
+                        <img src="" alt="Vista previa del proyecto encriptador de mensajes.">  <!-- Cargar encriptador -->
                         <div class="overlay">
+                            <a class="overlay_a" href="" target="_blank">
                             <h3>Encriptador de mensajes</h3>
-                            <p>Challange 1, para el programa de One + Alura</p>
+                            <p>Challange 1, para el programa de One + Alura</p></a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </section>
 
-        <!-- Seccion formulario -->
+        <!-- Seccion contacto -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>Contacto</h2>
+                <div class="fila">
+        <!-- Formulario -->    
+                    <div class="col">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Correo electrónico">
+                        <input type="text" placeholder="Asunto">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        </button>
+        
+                    </div>
+                </div>
+            </h2></div>
+        </section>
 
-        <footer class="foot">
-            <span class="foot-descrpcion">Desarrollado por Silvana con muchas horas de 🧉 <br> - 2022. </span>
+        <!-- Seccion footer -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="https://github.com/Alf0ns0Silvana" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/silvana-alfonso-44b62b212/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <span class="foot-descrpcion">Desarrollado por Silvana con muchas horas de 🧉 <br> 2022 </span>
         </footer>
 
     </div>
