@@ -528,11 +528,15 @@ html {
 
                                         /*Seccion Contacto */
 
+#form-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}              
 .contacto{
-    background: url(); /*buscar imagen*/
     background-color:#334652 ;
     color: #fff;
-    padding: 25px; /*50 y 0*/
+    padding: 25px;
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
@@ -554,14 +558,16 @@ html {
     position: relative;
 }
 .contacto .col input, .contacto .col textarea{
+    border: 0px;
+    border-bottom: 2px solid #ffffff;
     display: block;
     width: 100%;
-    padding: 15px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    color: #fff;
-    font: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font: 16px;
+    outline: none;
 }
 .contacto button{
     cursor: pointer;
@@ -586,6 +592,13 @@ html {
 }
 textarea {
     resize: none;
+}
+.error-message{
+    width: 40%;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: red;
+    display: flex;
 }
 
                                         /* Footer */
@@ -681,4 +694,4 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
-}
+} 

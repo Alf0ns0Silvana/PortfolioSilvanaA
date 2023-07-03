@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title> Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -41,7 +41,7 @@
         <section id="inicio" class="inicio">
             <div class="contenido-banner">
                 <div class="contenedor-img">
-                    <img src="">
+                    <img src="fotoperfil.jpg">
                 </div>
                 <h1>Silvana Alfonso</h1>
                 <h2>Frontend developer</h2>
@@ -325,7 +325,7 @@
                         <div class="overlay">
                             <a class="overlay_a" href=" https://alf0ns0silvana.github.io/AmazingEvents/" target="_blank">
                             <h3>Amazing Events</h3>
-                            <p>Proyecto realizado con html, css y javascript para el programa AP + Mindhub. </p></a>
+                            <p>Proyecto realizado durante el aprendizaje del programa AP + Mindhub. </p></a>
                         </div>
                     </div>
                     <div class="proyecto">
@@ -333,15 +333,15 @@
                         <div class="overlay">
                             <a class="overlay_a" href="https://alf0ns0silvana.github.io/Org.Eventos.NF/" target="_blank">
                             <h3>Organizacion de eventos</h3>
-                            <p>Página web realizada con html, css y javascript.</p></a>
+                            <p>Página web de servicio y planificación de eventos. </p></a>
                         </div>
                     </div>
                     <div class="proyecto">
-                        <img src="" alt="Vista previa del proyecto encriptador de mensajes.">  <!-- Cargar encriptador -->
+                        <img src="imgs-proyectos/proyectoEM.png" alt="Vista previa del proyecto encriptador de mensajes.">
                         <div class="overlay">
-                            <a class="overlay_a" href="" target="_blank">
+                            <a class="overlay_a" href="https://alf0ns0silvana.github.io/Encriptador_One_Alura/" target="_blank">
                             <h3>Encriptador de mensajes</h3>
-                            <p>Challange 1, para el programa de One + Alura</p></a>
+                            <p>Challange 1, realizado como parte del programa One + Alura. </p></a>
                         </div>
                     </div>
                 </div>
@@ -353,19 +353,25 @@
             <div class="contenido-seccion">
                 <h2>Contacto</h2>
                 <div class="fila">
-        <!-- Formulario -->    
-                    <div class="col">
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Correo electrónico">
-                        <input type="text" placeholder="Asunto">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button>
+        <!-- Formulario --> 
+                    <form action="" id="form-contact" method="get">
+                        <div class="col">
+                        <label for="nombre"></label>
+                        <input id="nombre" type="text" placeholder="Nombre" maxlength="50" data-error="error-nombre" >
+                        <label for="email"></label>
+                        <input id="email" type="email" placeholder="Correo electrónico" data-error="error-email" >
+                        <label for="asunto"></label>
+                        <input id="asunto" type="text" placeholder="Asunto" maxlength="50" data-error="error-asunto" >
+                        <label for="mensaje"></label>
+                        <textarea tittle="Debe contener máximo 300 caracteres."id="mensaje" cols="30" rows="10" placeholder="Mensaje" maxlength="300" data-error="error-mensaje" ></textarea>
+                        <button id="submit">
                             Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                         </button>
-        
-                    </div>
+                        </div>
+                        <div id="error"></div>
+                    </form>
                 </div>
-            </h2></div>
+            </div>
         </section>
 
         <!-- Seccion footer -->
@@ -378,7 +384,7 @@
                 <a href="https://www.linkedin.com/in/silvana-alfonso-44b62b212/" target="_blank"><i
                         class="fa-brands fa-linkedin"></i></a>
             </div>
-            <span class="foot-descrpcion">Desarrollado por Silvana con muchas horas de 🧉 <br> 2022. </span>
+            <span class="foot-descrpcion">Desarrollado por Silvana A.<br> 2022 🧉</span>
         </footer>
 
     </div>
