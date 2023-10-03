@@ -265,6 +265,22 @@ html {
     0%{width: 0%;}
     100%{width: 60%;}
 }
+.skills .skill .mongo{
+    width: 0%;
+    animation: 2s mongo forwards;
+}
+@keyframes mongo {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+.skills .skill .express{
+    width: 0%;
+    animation: 2s express forwards;
+}
+@keyframes express {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
 .skills .skill .react{
     width: 0%;
     animation: 2s react forwards;

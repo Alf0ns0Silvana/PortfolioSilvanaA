@@ -24,16 +24,18 @@ function efectoHabilidades(){
          habilidades[0].classList.add("html-css");
          habilidades[1].classList.add("javascript");
          habilidades[2].classList.add("vue");
-         habilidades[3].classList.add("react");
-         habilidades[4].classList.add("node");
-         habilidades[5].classList.add("github");
-         habilidades[6].classList.add("git");
-         habilidades[7].classList.add("ingles");
-         habilidades[8].classList.add("trabajo-en-equipo");
-         habilidades[9].classList.add("comunicacion");
-         habilidades[10].classList.add("organizacion");
-         habilidades[11].classList.add("automotivacion");
-         habilidades[12].classList.add("meticulosidad");
+         habilidades[3].classList.add("mongo");
+         habilidades[4].classList.add("express");
+         habilidades[5].classList.add("react");
+         habilidades[6].classList.add("node");
+         habilidades[7].classList.add("github");
+         habilidades[8].classList.add("git");
+         habilidades[9].classList.add("ingles");
+         habilidades[10].classList.add("trabajo-en-equipo");
+         habilidades[11].classList.add("comunicacion");
+         habilidades[12].classList.add("organizacion");
+         habilidades[13].classList.add("automotivacion");
+         habilidades[14].classList.add("meticulosidad");
     }
 }
 window.onscroll = function(){
