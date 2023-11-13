@@ -17,13 +17,12 @@
         <!-- Menú header -->
         <div class="contenedor-header">
             <header>
-                <div class="logo">
+                <div class="logo" id="inicio">
                     <a href="#"> Silvana Alfonso</a>
                 </div>
                 <nav id="nav">
                     <ul>
                         <li> <a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                        <li> <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                         <li> <a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                         <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                         <li> <a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
@@ -35,64 +34,43 @@
                 </div>
             </header>
         </div>
-
-        <!-- Seccion inicio -->
-        <section id="inicio" class="inicio">
-            <div class="contenido-banner">
-                <div class="contenedor-img">
-                    <img src="fotoperfil.jpg">
-                </div>
-                <h1>Silvana Alfonso</h1>
-                <h2>Frontend developer, especialización en react </h2>
-                <div class="redes">
-                    <a href="https://github.com/Alf0ns0Silvana" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/silvana-alfonso-44b62b212/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seccion sobre mí -->
-        <section id="sobremi" class="sobremi">
-            <div class="contenido-seccion">
-                <h2> Sobre mí</h2>
-                <p> Me presento como una persona creativa, con facilidad para adaptación a los
-                    cambios, y constante para el aprendizaje continuo. Mi objetivo laboral es
-                    formar parte de una empresa que me brinde la oportunidad de demostrar
-                    mis habilidades y competencias en el puesto Frontend y que a su vez me
-                    ayude a ampliar mis conocimientos. <br> Actualmente formo parte de un equipo de trabajo en
-                    Semillero Latam, trabajando con Angular en un proyecto para la municipalidad de Mendoza, Argentina.</p>
-                <div class="fila">
-                    <!-- Datos personales -->
-                    <div class="col">
-                        <h3>Datos Personales</h3>
-                        <ul>
-                            <li>
-                                <strong>Nacimiento:</strong>
-                                16/02/1996
-                            </li>
-                            <li>
-                                <strong>Email:</strong>
-                                alfonsosilvana16@gmail.com
-                            </li>
-                            <li>
-                                <strong>Teléfono:</strong>
-                                3412290622 (Arg.)
-                            </li>
-                            <li>
-                                <strong>Dirección:</strong>
-                                Rosario, Sta Fe, Argentina.
-                            </li>
-                        </ul>
+        <section class="inicio_sobremi">
+            <!-- Seccion inicio -->
+            <section  class="inicio">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="fotoperfil.jpg">
+                    </div>
+                    <div class="subtitulo">
+                        <h2>Frontend developer</h2>
+                        <span>React | Angular</span>
+                    </div>
+                    <div class="redes">
+                        <a href="https://github.com/Alf0ns0Silvana" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/silvana-alfonso-44b62b212/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/3412290622" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
                     </div>
-
                 </div>
-                <button class="button_download">
-                    <a href="download_cv/SilvanaA_Frontend_Cv.pdf" download="SilvanaAlfonso-FrontendDev">Descargar
-                        CV</a>
-                </button>
-            </div>
+            </section>
+    
+            <!-- Seccion sobre mí -->
+            <section id="sobremi" class="sobremi">
+                <div class="contenido-seccion">
+                    <h2>Sobre mi</h2>
+                    <p> Me presento como una persona creativa, con facilidad para adaptación a los
+                        cambios, y constante para el aprendizaje continuo. Mi objetivo laboral es
+                        formar parte de una empresa que me brinde la oportunidad de demostrar
+                        mis habilidades y competencias en el puesto Frontend y que a su vez me
+                        ayude a ampliar mis conocimientos. <br> Actualmente formo parte de un equipo de trabajo en
+                        Semillero Latam, trabajando con Angular en un proyecto para la municipalidad de Mendoza, Argentina.</p>
+                    <button class="button_download">
+                        <a href="download_cv/SilvanaA_Frontend_Cv.pdf" download="SilvanaAlfonso-FrontendDev">Descargar cv <i class="fa-solid fa-file"></i></a>
+                    </button>
+                </div>
+            </section>
         </section>
 
         <!-- Seccion skills -->
@@ -104,14 +82,6 @@
                     <div class="col">
                         <h3>Habilidades técnicas</h3>
                         <div class="skill">
-                            <span>Html & Css</span>
-                            <div class="barra-skill">
-                                <div class="progreso html-css">
-                                    <span>90%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
                             <span>Javascript</span>
                             <div class="barra-skill">
                                 <div class="progreso javascript">
@@ -120,10 +90,18 @@
                             </div>
                         </div>
                         <div class="skill">
-                            <span>Vue.js</span>
+                            <span>Angular</span>
                             <div class="barra-skill">
-                                <div class="progreso vue-js">
-                                    <span>60%</span>
+                                <div class="progreso angular">
+                                    <span>55%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="barra-skill">
+                                <div class="progreso react">
+                                    <span>70%</span>
                                 </div>
                             </div>
                         </div>
@@ -144,14 +122,6 @@
                             </div>
                         </div>
                         <div class="skill">
-                            <span>React</span>
-                            <div class="barra-skill">
-                                <div class="progreso react">
-                                    <span>70%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
                             <span>Node.js</span>
                             <div class="barra-skill">
                                 <div class="progreso node">
@@ -160,18 +130,10 @@
                             </div>
                         </div>
                         <div class="skill">
-                            <span>Github</span>
+                            <span>Material UI</span>
                             <div class="barra-skill">
-                                <div class="progreso github">
-                                    <span>45%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <span>Git</span>
-                            <div class="barra-skill">
-                                <div class="progreso git">
-                                    <span>40%</span>
+                                <div class="progreso material">
+                                    <span>75%</span>
                                 </div>
                             </div>
                         </div>
@@ -215,15 +177,7 @@
                             <span>Automotivación</span>
                             <div class="barra-skill">
                                 <div class="progreso Automotivacion">
-                                    <span>75%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <span>Meticulosidad</span>
-                            <div class="barra-skill">
-                                <div class="progreso Meticulosidad">
-                                    <span>70%</span>
+                                    <span>80%</span>
                                 </div>
                             </div>
                         </div>
@@ -267,19 +221,20 @@
                         </div>
                         <div class="item izq">
                             <h4> Estudios</h4>
-                            <span class="cargo"> Desarrollo frontend - Html, Css y Bootstrap | Udemy</span>
-                            <span class="cargo"> Html, Css y Javascript | Arg. prog. 4.0 + Ticmas academy </span>
-                            <span class="cargo"> Bootcamp FE - Html + Css + Js + Bootstrap + Vue.js | Arg. prog. 4.0 +
-                                MindHub </span>
-                            <span class="cargo"> Bootcamp Fullstack - Mongo + Express + React + Node.js | Arg. prog. 4.0
-                                + MindHub </span>
-                            <span class="cargo"> Frontend Dev - Html + Css + Js + Node.js + React | ONE + Alura </span>
-                            <span class="cargo"> Backend Dev - (en curso) | ONE + Alura </span>
-                            <span class="fecha">Fecha: 10/2021 - Actualidad </span>
+                            <span class="cargo"> Desarrollo web - Html, Css y Javascript </span>
+                            <p> Arg. prog. 4.0 + Ticmas academy </p> <hr>
+                            <span class="cargo"> Bootcamp FE - Html, Css, Js, Bootstrap, Vue.js</span>
+                            <p> Arg. prog. 4.0 + MindHub </p> <hr>
+                            <span class="cargo"> Bootcamp Fullstack - Mongo, Express, React, Node.js</span>
+                            <p> Arg. prog. 4.0 + MindHub </p> <hr>
+                            <span class="cargo"> Frontend Dev - Html, Css, Js, Node.js, React</span>
+                            <p>Oracle Next Education + Alura </p> <hr>
+                            <span class="cargo"> Backend Dev - (en curso)</span>
+                            <p>Oracle Next Education + Alura </p> <hr>
                             <div class="conectori">
                                 <div class="circuloi"></div>
                             </div>
-
+                            <span class="fecha">Fecha: 10/2021 - Actualidad </span>
                         </div>
                     </div>
                     <div class="col derecha">
@@ -376,7 +331,8 @@
                     <div class="proyecto">
                         <img src="imgs-proyectos/proyectoMyTinerary.png" alt="Vista previa de la app myTinerary.">
                         <div class="overlay">
-                            <a class="overlay_a" href="https://mytinerary-xi.vercel.app/" target="_blank">
+                            <a class="overlay_a" href="https://mytinerary-xi.vercel.app/"
+                                target="_blank">
                                 <h3>My tinerary</h3>
                                 <p>Proyecto fullstack con login/registro para usuarios que deseen conocer ciudades, sus
                                     respectivas actividades e itinerarios, los mismos estan creados desde 0 <br>| Stack
@@ -415,6 +371,7 @@
                     </form>
                 </div>
             </div>
+        <hr>
         </section>
 
         <!-- Seccion footer -->
@@ -426,8 +383,10 @@
                 <a href="https://github.com/Alf0ns0Silvana" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/silvana-alfonso-44b62b212/" target="_blank"><i
                         class="fa-brands fa-linkedin"></i></a>
+                <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/3412290622" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <span class="foot-descrpcion">Desarrollado por Silvana A.<br> 2022 🧉</span>
+            <span class="foot-descrpcion">Desarrollado por Silvana Alfonso <br> 2022</span>
         </footer>
 
     </div>

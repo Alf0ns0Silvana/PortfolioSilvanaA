@@ -9,11 +9,10 @@
 html {
     scroll-behavior: smooth;
 }
-                                /* Seccion Menu */
-
+.scroll {
+    background: linear-gradient(220.55deg, rgb(63, 63, 70) 0%, rgb(23 23 23) 100%);
+}
 .contenedor-header {
-    background-color: #2c3c47;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -30,7 +29,7 @@ html {
 .contenedor-header header .logo a {
     font-family: 'lora';
     font-size: 36px;
-    color: #17c2bc;
+    color: #97e9fc;
     text-decoration: none;
 }
 .contenedor-header header ul {
@@ -46,10 +45,10 @@ html {
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover {
-    color: #17c2bc;
+    color: #97e9fc;
 }
 .nav-responsive {
-    background-color: #17c2bc;
+    background-color: #97e9fc;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -58,27 +57,38 @@ html {
 }
 
                                 /* Seccion Inicio */
-
+.inicio_sobremi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 .inicio {
-    background: linear-gradient(to top, rgba(63, 65, 66, 0.8), rgb(37, 60, 71)),
-    url(fondo_banner.jpg);
-    background-size: cover;
-    height: 100vh;
+    height: 80vh;
     color: #fff;
     display: flex;
     align-items: center;
 } 
 .inicio .contenido-banner{
+    display: flex;
+    width: 100%;
     padding: 20px;
-    background-color: #293b46;
-    max-width: 350px;
     margin: auto;
     text-align: center;
-    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-img {
+    width: 270px;
+    height: 364px;
+}
+.subtitulo{
+    line-height: 1.5;
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 8px solid #17c2bc;
+    border: 4px solid #97e9fc;
     display: block;
     width: 80%;
     margin: auto;
@@ -103,57 +113,34 @@ html {
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 25px 5px;
     font-size: 20px;
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #17c2bc;
+    background-color: #97e9fc;
+    transform: scale(.9);
 }
 .sobremi{
-    background-color: #293b46;
     color: #fff;
-    padding: 50px 30px;
+    padding: 15px
 }
 .sobremi .contenido-seccion{
-    max-width: 1100px;
+    max-width: 500px;
     margin: auto;
 }
 .sobremi h2{
-    font-size: 48px;
+    font-size: 30px;
     font-family: 'work sans';
     font-weight: 650;
     text-align: center;
     padding: 20px 0px;
 }
 .sobremi .contenido-seccion p{
-    font: 18px;
-    line-height: 22px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 27px;
+    margin: 40px 0px;
 }
-.sobremi .fila{
-    display: flex;
-}
-.sobremi .fila .col{
-    width: 50%;
-}
-.sobremi .fila .col h3{
-    font-size: 28px;
-    font-family: 'work sans';
-    margin-bottom: 20px;
-}
-.sobremi .fila .col ul{
-    list-style: none;
-}
-.sobremi .fila .col ul li{
-    margin: 12px 0;
-}
-.sobremi .fila .col ul li strong{
-    display: inline-block;
-    color: #17c2bc;
-    width: 140px;
-}
-
 .sobremi button a{
     color: #fff;
     text-decoration: none;
@@ -170,8 +157,9 @@ html {
     z-index: 10;
 }
 .button_download:hover {
-    background-color: #17c2bc;
+    background-color: #97e9fc;
     transition: 0.8s;
+    letter-spacing: 0.1rem;
 }
 
                                 /* Seccion skills */ 
@@ -192,12 +180,10 @@ html {
     font-weight: 650;
     text-align: center;
     padding: 20px 0px;
-    background-color: #293b46;
 }
 .skills .fila{
     padding: 0px 20px;
     display: flex; 
-    background-color: #293b46;
 } 
 .skills .fila .col{
     width: 50%;
@@ -223,7 +209,7 @@ html {
     margin-bottom: 30px;
 } 
 .skills .skill .progreso{
-    background-color: #17c2bc;
+    background-color: #35badb;
     position: absolute;
     top: 0;
     left: 0;
@@ -233,7 +219,7 @@ html {
     position: absolute;
     height: 32px;
     width: 32px;
-    background-color: #17c2bc;
+    background-color: #35badb;
     border-radius: 50px;
     line-height: 35px;
     text-align: center;
@@ -241,14 +227,7 @@ html {
     right: -10px;
     font-size: 13px
 }
-.skills .skill .html-css{
-    width: 0%;
-    animation: 2s html-css forwards;
-}
-@keyframes html-css {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
+
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
@@ -257,13 +236,21 @@ html {
     0%{width: 0%;}
     100%{width:75%;}
 }
-.skills .skill .vue{
+.skills .skill .angular{
     width: 0%;
-    animation: 2s vue forwards;
+    animation: 2s angular forwards;
 }
-@keyframes vue {
+@keyframes angular {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 55%;}
+}
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 70%;}
 }
 .skills .skill .mongo{
     width: 0%;
@@ -281,14 +268,6 @@ html {
     0%{width: 0%;}
     100%{width: 40%;}
 }
-.skills .skill .react{
-    width: 0%;
-    animation: 2s react forwards;
-}
-@keyframes react {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
 .skills .skill .node{
     width: 0%;
     animation: 2s node forwards;
@@ -297,22 +276,13 @@ html {
     0%{width: 0%;}
     100%{width: 60%;}
 }
-
-.skills .skill .github{
+.skills .skill .material{
     width: 0%;
-    animation: 2s github forwards;
+    animation: 2s material forwards;
 }
-@keyframes github {
+@keyframes material {
     0%{width: 0%;}
-    100%{width: 45%;}
-}
-.skills .skill .git{
-    width: 0%;
-    animation: 2s git forwards;
-}
-@keyframes git{
-    0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 75%;}
 }
 .skills .skill .ingles{
     width: 0%;
@@ -322,6 +292,7 @@ html {
     0%{width: 0%;}
     100%{width: 75%;}
 }
+
 .skills .skill .trabajo-en-equipo{
     width: 0%;
     animation: 2s trabajo-en-equipo forwards;
@@ -352,16 +323,9 @@ html {
 }
 @keyframes automotivacion{
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 80%;}
 }
-.skills .skill .meticulosidad{
-    width: 0%;
-    animation: 2s meticulosidad forwards;
-}
-@keyframes meticulosidad{
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
+
 
                                 /* Seccion Curriculum */
 
@@ -370,7 +334,6 @@ html {
     padding: 50px 0px;
 }
 .curriculum .contenido-seccion{
-  background-color: #293b46;
   max-width: 1910px;
   margin: auto;
 }
@@ -394,30 +357,29 @@ html {
     margin-bottom: 20px;
 }
 .curriculum .fila .izquierda{
-    border-right: 2px solid #334652;
+    border-right: 2px solid #1a9dc0; 
     
 }
 .curriculum .fila .derecha{
-    border-left: 2px solid #334652;
+    border-left: 2px solid #1a9dc0;
 
 }
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #334652;
     position: relative;
 }
 .curriculum .fila .item h4{
     font-size: 17px;
     margin-bottom: 5px;
-    color: #67e6e1;
+    color: #1a9dc0;
     font-weight: bold;
  
 }
 .curriculum .fila .item .cargo{
     display: block;
     font-weight: 600;
-    padding-bottom: 5px;
+    padding: 5px 0px;
 }
 .curriculum .fila .item .fecha{
     display: block;
@@ -427,16 +389,16 @@ html {
     line-height: 20px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #67e6e1;
+    border-right: 2px solid #1a9dc0;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #67e6e1;
+    border-left: 2px solid #1a9dc0;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #67e6e1;
+    background-color: #1a9dc0;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -448,7 +410,7 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #67e6e1;
+    background-color: #1a9dc0;
     float: right;
     position: relative;
     bottom: 4px;
@@ -458,7 +420,7 @@ html {
 
 .curriculum .fila .item .conectord{
     height: 2px;
-    background-color: #67e6e1;
+    background-color: #1a9dc0;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -470,7 +432,7 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #67e6e1;
+    background-color: #1a9dc0;
     float: left;
     position: relative;
     bottom: 4px;
@@ -479,7 +441,7 @@ html {
                                     /*Proyectos*/
 
 .portfolio{
-    background-color: #293b46;
+    /* background-color: #293b46; */
     color : #fff;
     padding: 50px 0px;
 }
@@ -516,7 +478,7 @@ html {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(48, 226, 191, 0.8), rgba(175, 231, 222, 0.8));
+    background:  linear-gradient(to bottom, rgba(26, 157, 192, 0.9), rgba(24, 126, 162, 0.5));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -550,7 +512,6 @@ html {
     justify-content: center;
 }              
 .contacto{
-    background-color:#334652 ;
     color: #fff;
     padding: 25px;
 }
@@ -572,10 +533,11 @@ html {
     width: 65%; 
     padding: 10px;
     position: relative;
+    margin: 10px 0px;
 }
 .contacto .col input, .contacto .col textarea{
     border: 0px;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #fff;
     display: block;
     width: 100%;
     padding: 10px;
@@ -600,8 +562,9 @@ html {
     transition: 2s;
 }
 .contacto button:hover {
-    background-color: #17c2bc;
+    background-color: #187ea2;
     transition: 0.8s;
+    letter-spacing: 0.1rem;
 }
 .contacto button i{
     padding-left: 5px;
@@ -617,11 +580,14 @@ textarea {
     display: flex;
 }
 
+hr {
+    margin: 10px 0px;
+}
+
                                         /* Footer */
 
 
 footer{
-    background-color:#293b46;
     color: #fff;
     text-align: center;
     padding: 15px 0px;
@@ -644,11 +610,15 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
+footer .redes a:hover{
+    background-color:#187ea2;
+    transform: scale(.9);
+}
 footer .arriba{
     display: block;
     width: 40px;
     height: 40px;
-    background-color:#17c2bc;
+    background-color: #187ea2;
     color: #fff;
     position: absolute;
     left: 90%;
@@ -671,7 +641,7 @@ footer .arriba{
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #293b46;
+        background-color: #97e9fc;
         width: 180px;
     }
     nav.responsive ul{
@@ -683,6 +653,9 @@ footer .arriba{
     }
 }
 @media screen and (max-width: 700px){
+    .inicio_sobremi{
+        flex-direction: column;
+    }
     .sobremi .fila {
         display: block;
     }
