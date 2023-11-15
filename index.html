@@ -350,20 +350,19 @@
                 <h2>Contacto</h2>
                 <div class="fila">
                     <!-- Formulario -->
-                    <form action="" id="form-contact" method="get">
+                    <form action="https://formsubmit.co/alfonsosilvana16@gmail.com" method="POST" id="form-contact">
                         <div class="col">
                             <label for="nombre"></label>
-                            <input id="nombre" type="text" placeholder="Nombre" maxlength="50"
-                                data-error="error-nombre">
+                            <input id="nombre" name="nombre" type="text" placeholder="Nombre" maxlength="50" required>
                             <label for="email"></label>
-                            <input id="email" type="email" placeholder="Correo electrónico" data-error="error-email">
+                            <input id="email" name="email" type="email" placeholder="Correo electrónico" required>
                             <label for="asunto"></label>
-                            <input id="asunto" type="text" placeholder="Asunto" maxlength="50"
-                                data-error="error-asunto">
+                            <input id="asunto" name="asunto" type="text" placeholder="Asunto" maxlength="50"
+                                 required>
                             <label for="mensaje"></label>
-                            <textarea tittle="Debe contener máximo 300 caracteres." id="mensaje" cols="30" rows="10"
-                                placeholder="Mensaje" maxlength="300" data-error="error-mensaje"></textarea>
-                            <button id="submit">
+                            <textarea name="mensaje" tittle="Debe contener máximo 300 caracteres." id="mensaje" cols="30" rows="10"
+                                placeholder="Mensaje" maxlength="300" required></textarea>
+                            <button type="submit" id="submit">
                                 Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                             </button>
                         </div>

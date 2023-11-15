@@ -23,9 +23,9 @@ function efectoHabilidades(){
         let habilidades =document.getElementsByClassName("progreso");
          habilidades[0].classList.add("javascript");
          habilidades[1].classList.add("angular");
-         habilidades[2].classList.add("mongo");
-         habilidades[3].classList.add("express");
-         habilidades[4].classList.add("react");
+         habilidades[2].classList.add("react");
+         habilidades[3].classList.add("mongo");
+         habilidades[4].classList.add("express");
          habilidades[5].classList.add("node");
          habilidades[6].classList.add("material");
          habilidades[7].classList.add("ingles");
@@ -36,57 +36,40 @@ function efectoHabilidades(){
     }
 }
 window.onscroll = function(){
-    efectoHabilidades();
+  efectoHabilidades();
 }
-const form = document.getElementById('form-contact');
-const nombre = document.getElementById('nombre');
-const email = document.getElementById('email');
-const asunto = document.getElementById('asunto');
-const mensaje = document.getElementById('mensaje');
-const error = document.getElementById('error');
 
-form.addEventListener('submit', function(evt) {
-  evt.preventDefault();
-  console.log("enviando form");
-  var msjError = [];
+function validateForm() {
+  const nombre = document.getElementById('nombre');
+  const email = document.getElementById('email');
+  const asunto = document.getElementById('asunto');
+  const mensaje = document.getElementById('mensaje');
 
-  function mostrarError(input, mensaje) {
-    const errorHtml = `<div class="error-message">${mensaje}</div>`;
-    input.insertAdjacentHTML('afterend', errorHtml);
-    input.classList.add('error-input');
-   }
-   
-  function limpiarErrores() {
-    const errorDivs = document.querySelectorAll('.error-message');
-    errorDivs.forEach((div) => div.remove());
-    const inputs = document.querySelectorAll('[data-error]');
-    inputs.forEach((input) => input.classList.remove('error-input'));
-  }
-  limpiarErrores();
-
-
+  console.log('valores form:', nombre.value, email.value, asunto.value, mensaje.value);
+  
   if (nombre.value === null || nombre.value === '') {
-    mostrarError(nombre, 'Ingresa tu nombre (hasta 50 caracteres)');
-  }
+    return false;
+  }  
   if (email.value === null || email.value === '') {
-    mostrarError(email, 'Ingresa tu email.');
+    return false;
   } else if (!validarEmail(email.value.trim())) {
-    mostrarError(email, 'El correo electrónico ingresado no es válido.');
-  }
+  }  
   if (asunto.value === '') {
-    mostrarError(asunto, 'Este campo es obligatorio (hasta 50 caracteres)');
-  }
+    return false;
+  }  
   if (mensaje.value === '') {
-    mostrarError(mensaje, 'Este campo es obligatorio (hasta 300 caracteres)');
-  }
+    return false;
+  }  
+  return true;
+}    
 
-  if (msjError.length === 0) {
-    form.reset(); 
-  }
-
-});
+document.getElementById('form-contact').addEventListener('submit', function(event) {
+  if (!validateForm()) {
+    event.preventDefault();
+  }  
+});  
 
 function validarEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
-}
+} 
